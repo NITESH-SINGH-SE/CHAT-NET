@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Satisfy', cursive; */
+  scroll-behavior: smooth;
+}
+
+body 
+{
+    background-image: url('./images/landing_page/bg.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Heading Part starts */
+.header{
+  width: 80rem;
+  color: #00a1e4;
+  font-size: 1rem;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Satisfy', cursive;
+  padding: 1rem;
+  margin-left: 10vw;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn1{
+  width: 5vw;
+  padding: 0.2rem;
+  background: white;
+  color: #00a1e4;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: 'Satisfy', cursive;
+  margin-right: 6rem;
+}
+
+.btn1:hover{
+  color: white;
+  background: #00a1e4;
+  transform: scale(1.2);
+}
+
+h1{
+  font-family: 'Satisfy', cursive;
+  margin-left: 3rem;
+  color: #00a1e4;
+}
+/* Heading parts ends */
+
+h2{
+  font-family: 'Satisfy', cursive;
+}
+
+.container1{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+/* Styling for the chess interface */
+.chess-interface {
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.divv {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  display: grid;
+  place-items: center;
+  font-size: 0px;
+}
+
+.box {
+  margin: 0.5px;
+  width: 70px;
+  height: 70px;
+}
+
+#tog {
+  margin: 10px 0px;
+}
+
+.allimg {
+  /* width: 3.5rem; */
+  height: 3.5rem;
+  position: relative;
+  bottom: 5px;
+}
+
+.allpawn {
+  transform: scale(0.7);
+}
+
+.authcont {
+  width: 100vw;
+}
+
+.author {
+  float: right;
+  margin-right: 50px;
+}
+
+@media (max-width: 650px) {
+  #tog {
+    margin-bottom: 70px;
+  }
+
+  .box {
+    width: 11vw;
+  }
+
+  .allimg {
+    width: 7vw;
+  }
+}
+
+
+/* Styling for chat application */
+.container{
+    max-width: 80vw;
+    border: 2px solid black;
+    margin: auto;
+    height: 70vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    background-color: #ebebeb;
+}
+
+.main{
+  border: 8px solid #dddddd;
+  border-radius: 24px;
+  overflow: hidden;  
+}
+
+.name{
+  display: flex;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 8px 16px;
+  color: #7e7e7e;
+  background-color: #ebebeb;
+}
+
+.name > span {
+  color: #bbb;
+}
+
+.name-input{
+  font-size: 24px;
+  font-weight: 700;
+  color: #7e7e7e;
+  flex-grow: 1;
+  border: none;
+  margin: 0px 12px;
+  outline: none;
+  background-color: #ebebeb;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  width: 400px;
+  height: 50vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.message-left, .message-right{
+  list-style: none;
+  padding: 8px 12px;
+  margin: 12px;
+  max-width: 250px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.message-left{
+  border-radius: 20px 20px 20px 0px;
+  align-self: flex-start;
+  background-color: #fff;
+  box-shadow: -2px 2px 4px #dcdcdc;
+}
+
+.message-right{
+  border-radius: 20px 20px 0px 20px;
+  align-self: flex-end;
+  background-color: #2d2d2d;
+  box-shadow: 2px 2px 4px #dcdcdc;
+  color: #f6f6f6;
+}
+
+.message-left > p> span, .message-right > p> span{
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.message {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+}
+
+.feedback{
+  font-style: italic;
+  font-size: 14px;
+  padding: 0px 16px 16px 16px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.message-form{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.message-input{
+  flex-grow: 1;
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  background-color: #fff;
+}
+
+.send-button{
+  height: 48px;
+  font-size: 16px;
+  border: none;
+  padding: 0px 20px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.v-divider{
+  height: 48px;
+  width: 2px;
+  background-color: #f6f6f6;
+}
+
+.clients-total{
+  margin: 20px 0;
+  color: #7e7e7e;
+}

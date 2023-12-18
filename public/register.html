@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="header">
+        <a href="/"><h1>Chat Net</h1></a>
+    </div>
+    <div class="container">
+        <div class="feature-image">
+            <img src="./images/landing_page/log.svg" alt="Image Unavailable">
+        </div>
+        <div class="feature-content">
+            <div class="form-container">
+                <h2>Register</h2>
+                <form action="/register" method="post">
+                    <input type="text" name="name" placeholder="Name" class="field">
+                    <input type="email" name="email" id="email" placeholder="Email" class="field">
+                    <input type="password" name="pass" placeholder="Password" class="field">
+                    <input type="password" name="passCon" placeholder="Confirm Password" class="field">
+                    <button class="field">Submit</button>
+                </form>
+                <p>Already have an account? <a href="/login">Login</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
